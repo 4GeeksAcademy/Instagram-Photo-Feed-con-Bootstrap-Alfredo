@@ -2,40 +2,142 @@
 <html>
 <head>
   <link rel="stylesheet" href="styles.css">
-
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
 </head>
 
 <body>
 
-  <h1>Breathe Code Photo Feed</h1>
+  <h1 class="my-4 ms-3">
+    <i class="fa-brands fa-instagram"></i> Instagram</h1>
+    
+  <div class="d-flex justify-content-end align-items-center gap-2 me-3">
+  
+ <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo">Create a mew post</button>
 
-  <div class="feed">
 
-    <div class="post">
-      <p><strong>My First Photo</strong></p>
-      <img src="https://st.depositphotos.com/1679308/1622/i/950/depositphotos_16225575-stock-photo-landscape-of-croatian-nature.jpg">
-      <p>This is my first photo of the feed.</p>
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">New Post</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="mb-3">
+            <label for="message-text" class="col-form-label">Caption:</label>
+            <textarea class="form-control" id="message-text"></textarea>
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-success">Publish</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+   <div class="dropdown text-end me-3">
+  <a class="btn btn-secondary dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+    <i class="fa-regular fa-circle-user"></i>
+  </a>
+
+  <ul class="dropdown-menu">
+    <li><a class="dropdown-item" href="#">Profile</a></li>
+    <li><a class="dropdown-item" href="#">Accesibility</a></li>
+    <li><a class="dropdown-item" href="#">Privacy And Data</a></li>
+    <li><hr class="dropdown-divider"></li>
+    <li><a class="dropdown-item  text-danger" href="#">Log Out</a></li>
+  </ul>
+</div>
+
+</div>
+
+  <ul class="nav nav-tabs justify-content-center">
+    <li class="nav-item">
+      <button class="nav-link" data-bs-toggle="tab" data-bs-target="#active">
+        <i class="fa-solid fa-chess-board"></i>
+      </button>
+    </li>
+    <li class="nav-item">
+      <button class="nav-link active" data-bs-toggle="tab" data-bs-target="#link">
+        <i class="fa-regular fa-square"></i>
+      </button>
+    </li>
+  </ul>
+
+ 
+  <div class="tab-content">
+
+   
+    <div class="tab-pane fade grid-instagram" id="active">
+
+      <div class="d-flex justify-content-between">
+      <img src="https://st.depositphotos.com/1679308/1622/i/950/depositphotos_16225575-stock-photo-landscape-of-croatian-nature.jpg" class="img-izq"> 
+      <img src="https://static0.cbrimages.com/wordpress/wp-content/uploads/2025/02/10-things-about-goku-you-d-only-know-if-you-read-the-dragon-ball-manga.jpg" class="img-centro">
+      <img src="https://www.tudn.com/_next/image?url=https%3A%2F%2Fst1.uvnimg.com%2F56%2Fa4%2Ff690d56a4a9c8f4d95d0966db4cd%2Fcristiano-ronaldo.jpg&w=1024&q=75" class="img-der">
+  
+      </div>
+
+      <div class="d-flex justify-content-between">
+      <img src="https://continentalsuppliers.com/wp-content/uploads/2024/04/pc-gmaer.webp" class="img-izq"> 
+      <img src="https://d1jyxxz9imt9yb.cloudfront.net/medialib/4350/image/p1300x1300/AdobeStock_123823873_433578_reduced.webp" class="img-centro">
+      <img src="https://editorialtelevisa.brightspotcdn.com/dims4/default/808790d/2147483647/strip/true/crop/920x920+300+0/resize/1000x1000!/format/webp/quality/90/?url=https%3A%2F%2Fk2-prod-editorial-televisa.s3.us-east-1.amazonaws.com%2Fbrightspot%2F58%2Feb%2Fb537a4714c11890dfba66649ee13%2Fflautas-transformed.jpeg" class="img-der">
+      </div>
+
+      <div class="d-flex justify-content-between">
+      <img src="https://assets.vogue.com/photos/659db809e0e9934642099815/master/w_2240,c_limit/1189690204" class="img-izq"> 
+      <img src="https://www.catalogodeservicios.com/content/20170626204417-1.jpg" class="img-centro">
+      <img src="https://lego.latamelite.com/cdn/shop/files/43020_851x851.jpg?v=1766586751" class="img-der">
+  
+      </div>
+
     </div>
 
-    <div class="post">
-      <p><strong>Some Cute Thing</strong></p>
-      <img src="https://www.vitakraft.com/fileadmin/_processed_/1/3/csm_el_origen_del_perro_3cc21c0da1.webp">
-      <p>This is some cute thing I made.</p>
-    </div>
+    
+    <div class="tab-pane fade show active" id="link">
 
-    <div class="post">
-      <p><strong>Coding is Not Easy!</strong></p>
-      <img src="https://i0.wp.com/blog.lewagon.com/wp-content/uploads/2023/04/smwv5a92l0e0u3c5yrwe9c4v4js2-1.jpeg?w=714&ssl=1">
-      <p>I'm learning how to code 😅</p>
-    </div>
+      <div class="feed">
 
-    <div class="post">
-      <p><strong>And of course... Food</strong></p>
-      <img src="https://www.sortirambnens.com/wp-content/uploads/2019/02/pizza-de-peperoni.jpg">
-      <p>This pepperoni pizza is really good.</p>
+        <div class="post">
+          <p><strong>My First Photo</strong></p>
+          <img src="https://st.depositphotos.com/1679308/1622/i/950/depositphotos_16225575-stock-photo-landscape-of-croatian-nature.jpg">
+          <p><strong>50,030 likes</strong></p>
+          <p>This is my first photo of the feed.</p>
+        </div>
+
+        <div class="post">
+          <p><strong>Some Cute Thing</strong></p>
+          <img src="https://www.vitakraft.com/fileadmin/_processed_/1/3/csm_el_origen_del_perro_3cc21c0da1.webp">
+          <p><strong>6,200 likes</strong></p>
+          <p>This is some cute thing I made.</p>
+        </div>
+
+        <div class="post">
+          <p><strong>Coding is Not Easy!</strong></p>
+          <img src="https://i0.wp.com/blog.lewagon.com/wp-content/uploads/2023/04/smwv5a92l0e0u3c5yrwe9c4v4js2-1.jpeg?w=714&ssl=1">
+          <p><strong>15,890 likes</strong></p>
+          <p>I'm learning how to code 😅</p>
+        </div>
+
+        <div class="post">
+          <p><strong>And of course... Food</strong></p>
+          <img src="https://www.sortirambnens.com/wp-content/uploads/2019/02/pizza-de-peperoni.jpg">
+          <p><strong>103,112 likes</strong></p>
+          <p>This pepperoni pizza is really good.</p>
+        </div>
+
+      </div>
     </div>
 
   </div>
 
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
 </body>
 </html>
+
